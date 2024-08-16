@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>JavaScript Training</h1>
+      <h2><label for="tweetText">Tweet :</label></h2>
+      <textarea name="tweetText" id="tweetText" rows="5" cols="50"></textarea>
+      <button id="submitTweet" onclick="testConcat()">Tweet</button>
+      <p id="warningId"></p>
+    </div>
+    <hr />
+    <div class="container">
+      <h1>Concat, Slice, toUpperCase</h1>
+      <form>
+        <label for="Name">What is your name: </label>
+        <input type="text" name="Name" placeholder="Input name" id="nameId" />
+        <button type="button" id="submitName" onclick="testName()">
+          Submit
+        </button>
+      </form>
+      <h1 id="helloName"></h1>
+    </div>
+    <hr />
+    <div class="container">
+      <h1>Dog Age to Human Age</h1>
+      <form>
+        <label for="dogAge">Input your Dog age: </label>
+        <input type="number" placeholder="Dog Age" id="dogAgeId" />
+        <button
+          type="button"
+          id="submitDogAgeBtn"
+          onclick="testDogAgeCalculator()"
+        >
+          Submit
+        </button>
+        <h1 id="dogAgeOutput"></h1>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
