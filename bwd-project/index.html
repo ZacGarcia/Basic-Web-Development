@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Project</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="myCart" class="modal">
+        <div class="cart-modal">
+          <span class="close">&times;</span>
+          <h5>Order List</h5>
+          <hr />
+          <div class="cart-list">
+            <table id="myTable">
+              <tbody id="tableId"></tbody>
+            </table>
+            <h6 id="totalId"></h6>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <div class="nav-title"><h1>WatchShop</h1></div>
+
+        <div class="cart-container">
+          <img id="cart-icon" src="./images/cart.svg" alt="cart icon" />
+          <div id="notif" class="badge-container">
+            <span id="NotificationBadge"></span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="slide container">
+        <header>
+          <div class="mySlides fade">
+            <img class="imgb banner1" src="./images/watch-banner1.jpg" alt="" />
+          </div>
+          <div class="mySlides fade">
+            <img class="imgb banner2" src="./images/watch-banner2.jpg" alt="" />
+          </div>
+          <div class="mySlides fade">
+            <img class="imgb banner3" src="./images/watch-banner3.jpg" alt="" />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </header>
+      </div>
+      <div id="prodBox" class="prod container"></div>
+    </div>
+    <div></div>
+
+    <footer>
+      <p class="footerClass">
+        Copyright 2024 Basic Web Development Assessment.
+      </p>
+    </footer>
+    <script src="script.js" />
+  </body>
+</html>
